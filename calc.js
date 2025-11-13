@@ -19,6 +19,16 @@ var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
 
+function setGraalMultipliers() {
+    document.getElementById("mults").value = "20332 15444 10663 22154";
+    clear_strats();
+}
+
+function setNoGraalMultipliers() {
+    document.getElementById("mults").value = "9567 8452 6322 5121";
+    clear_strats();
+}
+
 function diffDates() {
     return (currDate - begDate) / (60 * 60 * 24 * 1000);
 };
