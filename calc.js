@@ -18,14 +18,24 @@ var strat3arr = [];
 var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
+const graalNumbers = [136686, 98463, 85115, 91647, 123050, 22269, 68495, 73143];
+const noGraalNumbers = [9567, 8452, 6322, 5121, 6000, 7000, 8000, 9000];
+
+function updateTable(numbers) {
+    for (let i = 1; i <= 8; i++) {
+        document.getElementById("tableNum" + i).textContent = numbers[i-1];
+    }
+}
 
 function setGraalMultipliers() {
-    document.getElementById("mults").value = "136686 123050 73143 20170";
+    document.getElementById("mults").value = "136686 98463 85115 91647 123050 22269 68495 73143";
+	updateTable(graalNumbers);
     clear_strats();
 }
 
 function setNoGraalMultipliers() {
     document.getElementById("mults").value = "118857 63602 19365";
+	updateTable(noGraalNumbers);
     clear_strats();
 }
 
