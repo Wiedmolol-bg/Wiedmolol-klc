@@ -20,13 +20,35 @@ var arrcomb2 = [0,0];
 var arrcomb3 = 0;
 
 function setGraalMultipliers() {
-    document.getElementById("mults").value = "20332 15444 10663 22154";
+    document.getElementById("mults").value = "136686 123050 73143 20170";
     clear_strats();
 }
 
 function setNoGraalMultipliers() {
-    document.getElementById("mults").value = "9567 8452 6322 5121";
+    document.getElementById("mults").value = "118857 63602 19365";
     clear_strats();
+}
+
+function pasteToGoal() {
+    // Очищаем поле цель
+    document.getElementById("needval").value = "";
+    
+    // Пытаемся получить текст из буфера обмена
+    navigator.clipboard.readText()
+        .then(text => {
+            // Проверяем, что в буфере число
+            if (!isNaN(parseInt(text))) {
+                document.getElementById("needval").value = text;
+                updateRest(); // Обновляем остаток
+            } else {
+                alert("В буфере обмена не число!");
+            }
+        })
+        .catch(err => {
+            // Если API не поддерживается, используем старый способ
+            alert("Нажмите Ctrl+V в поле 'Цель' для вставки");
+            document.getElementById("needval").focus();
+        });
 }
 
 function diffDates() {
