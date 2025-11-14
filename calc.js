@@ -19,7 +19,7 @@ var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
 const graalNumbers = [136686, 98463, 85115, 91647, 123050, 22269, 68495, 73143];
-const noGraalNumbers = [9567, 8452, 6322, 5121, 6000, 7000, 8000, 9000];
+const noGraalNumbers = [118857, 85620, 74013, 79693, 107000, 19365, 59561, 63602];
 
 function updateTable(numbers) {
     for (let i = 1; i <= 8; i++) {
@@ -34,7 +34,7 @@ function setGraalMultipliers() {
 }
 
 function setNoGraalMultipliers() {
-    document.getElementById("mults").value = "118857 63602 19365";
+    document.getElementById("mults").value = "118857, 85620, 74013, 79693, 107000, 19365, 59561, 63602";
 	updateTable(noGraalNumbers);
     clear_strats();
 }
