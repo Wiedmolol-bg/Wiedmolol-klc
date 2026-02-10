@@ -28,13 +28,13 @@ function updateTable(numbers) {
 }
 
 function setGraalMultipliers() {
-    document.getElementById("mults").value = "136686 98463 85115 91647 123050 22269 68495 73143";
+    document.getElementById("mults").value = "120989 87156 75341 81122 108919 19712 60629 64743";
 	updateTable(graalNumbers);
     clear_strats();
 }
 
 function setNoGraalMultipliers() {
-    document.getElementById("mults").value = "118857, 85620, 74013, 79693, 107000, 19365, 59561, 63602";
+    document.getElementById("mults").value = "105208 75788 65514 70541 94712 17141 52721 56298";
 	updateTable(noGraalNumbers);
     clear_strats();
 }
@@ -940,3 +940,4 @@ switch (but) {
 }
 
 }
+
