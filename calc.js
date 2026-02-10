@@ -18,8 +18,8 @@ var strat3arr = [];
 var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
-const graalNumbers = [136686, 98463, 85115, 91647, 123050, 22269, 68495, 73143];
-const noGraalNumbers = [118857, 85620, 74013, 79693, 107000, 19365, 59561, 63602];
+const graalNumbers = [120989, 87156, 75341, 81122, 108919, 19712, 60629, 64743];
+const noGraalNumbers = [105208, 75788, 65514, 70541, 94712, 17141, 52721, 56298];
 
 function updateTable(numbers) {
     for (let i = 1; i <= 8; i++) {
@@ -938,4 +938,5 @@ switch (but) {
 		}
 	break;
 }
+
 }
