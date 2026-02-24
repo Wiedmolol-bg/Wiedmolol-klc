@@ -18,8 +18,8 @@ var strat3arr = [];
 var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
-const graalNumbers = [120989, 87156, 75341, 81122, 108919, 19712, 60629, 64743];
-const noGraalNumbers = [105208, 75788, 65514, 70541, 94712, 17141, 52721, 56298];
+const graalNumbers = [121491, 87517, 75653, 81459, 19370, 19794, 60880, 65011];
+const noGraalNumbers = [105644, 76102, 65785, 70834, 95105, 17212, 52939, 56532];
 
 function updateTable(numbers) {
     for (let i = 1; i <= 8; i++) {
@@ -28,13 +28,13 @@ function updateTable(numbers) {
 }
 
 function setGraalMultipliers() {
-    document.getElementById("mults").value = "120989 87156 75341 81122 108919 19712 60629 64743";
+    document.getElementById("mults").value = "121491, 87517, 75653, 81459, 19370, 19794, 60880, 65011";
 	updateTable(graalNumbers);
     clear_strats();
 }
 
 function setNoGraalMultipliers() {
-    document.getElementById("mults").value = "105208 75788 65514 70541 94712 17141 52721 56298";
+    document.getElementById("mults").value = "105644, 76102, 65785, 70834, 95105, 17212, 52939, 56532";
 	updateTable(noGraalNumbers);
     clear_strats();
 }
@@ -940,4 +940,5 @@ switch (but) {
 }
 
 }
+
 
