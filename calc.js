@@ -18,8 +18,8 @@ var strat3arr = [];
 var arrcomb1 = 0;
 var arrcomb2 = [0,0];
 var arrcomb3 = 0;
-const graalNumbers = [125905, 90697, 78402, 84418, 113344, 20513, 63092, 67373];
-const noGraalNumbers = [109482, 78867, 68176, 73407, 98560, 17837, 54863, 58586];
+const graalNumbers = [130600, 94079, 81325, 87566, 117570, 21278, 65445, 69886];
+const noGraalNumbers = [113565, 81808, 70718, 76144, 102235, 18502, 56909, 60770];
 
 function updateTable(numbers) {
     for (let i = 1; i <= 8; i++) {
@@ -28,13 +28,13 @@ function updateTable(numbers) {
 }
 
 function setGraalMultipliers() {
-    document.getElementById("mults").value = "125905, 90697, 78402, 84418, 113344, 20513, 63092, 67373";
+    document.getElementById("mults").value = "130600, 94079, 81325, 87566, 117570, 21278, 65445, 69886";
 	updateTable(graalNumbers);
     clear_strats();
 }
 
 function setNoGraalMultipliers() {
-    document.getElementById("mults").value = "109482, 78867, 68176, 73407, 98560, 17837, 54863, 58586";
+    document.getElementById("mults").value = "113565, 81808, 70718, 76144, 102235, 18502, 56909, 60770";
 	updateTable(noGraalNumbers);
     clear_strats();
 }
